@@ -11,21 +11,26 @@ export const getPosts = async () => {
 }
 
 export const getPost = async (id: string) => {
-  const response = await api.get<Post>(`/posts/${id}`);
+  const response = await api.get<Post>(`/${id}`);
   return response.data;
 }
 
 export const createPost = async (post: Post) => {
-  const response = await api.post<Post>(`/posts`, post);
+  const response = await api.post<Post>(``,post);
   return response.data;
 }
 
 export const updatePost = async (id: string, post: Post) => {
-  const response = await api.put<Post>(`/posts/${id}`, post);
+  const response = await api.put<Post>(`/${id}`, post);
   return response.data;
 }
 
-export const deletePost = async (id: string) => {
-  const response = await api.delete<Post>(`/posts/${id}`);
+export const deletePost = async (id: number) => {
+  const response = await api.delete<Post>(`/${id}`);
+  return response.data;
+}
+
+export const softDeletePost = async (id: number) => {
+  const response = await api.post<Post>(`/soft-delete/${id}`);
   return response.data;
 }
