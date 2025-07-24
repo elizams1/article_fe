@@ -1,5 +1,5 @@
 # Take Home Test
-1. clone this repository
+1. clone this repository : `https://github.com/elizams1/article_fe.git`
 2. `npm install` : for get all package 
 3. `npm start` : for start development web
 4. I use Material UI for tag and the component
