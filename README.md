@@ -1,3 +1,11 @@
+# Take Home Test
+1. clone this repository
+2. `npm install` : for get all package 
+3. `npm start` : for start development web
+4. I use Material UI for tag and the component
+5. FE on vercel : https://article-fe-delta.vercel.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
